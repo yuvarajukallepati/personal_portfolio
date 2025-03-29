@@ -1,0 +1,324 @@
+body{
+    font-family: "Libre Baskerville", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin:0px;
+}
+.heading{
+    width:fit-content;
+    margin:0;
+    text-decoration: underline;
+}
+
+/* navbar section.... */
+#header{
+    position:fixed;
+    z-index: 1000;
+    width: 100vw;
+    height:6vh;
+    background-color: rgba(0, 0, 139, 0.256);
+
+    display:flex;
+    justify-content: space-between;
+}
+#header .name{
+    width:40vw;
+    color:rgba(0, 0, 0, 0.767)
+}
+#header .name .namec{
+    color:rgba(220, 10, 10, 0.868)
+}
+#header .namelist{
+    width:30vw;
+    padding-right: 5vw;
+}
+.nlist{
+    list-style-type: none;  /* this is to remove dots/numbers/symbols in-front of the list items. */
+    display:flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+a:hover{
+    color:rgb(225, 56, 40)
+}
+
+/* hero section..... */
+#hero{
+    height:85vh;
+    width:100%;
+    background-color: #f8f5e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.herocontainer{
+    /* border:2px solid black; */
+    width:fit-content;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profilephoto{
+    width:200px;
+    height:240px;
+    border-radius: 7px; 
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);  
+}
+.herocontainer .nm{
+    color:green;
+    font-size: large;
+}
+.herocontainer p{
+    font-weight: 500;
+}
+.herobuttons{
+    color:white;
+    background-color: black;
+    padding:3px 10px
+}
+
+/* about section........  */
+#about{
+    /* border:2px solid black; */
+    display:flex;
+    justify-content: space-between;
+    width:97%;
+    margin:auto;
+}
+.aboutp2{
+    width:57%;
+    /* border:1px solid black; */
+}
+.aboutp1{
+    width:37% ;
+    text-align: center;  /* this is to get the image into center position.*/
+    align-self: center;
+}
+
+/* skills section ......  */
+#skills{
+    /* border:2px solid black; */
+    width:97%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.skillsdiv{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    display: flex;
+    min-height: 100px;
+
+}
+.skillsdiv .p1{
+    width:30%;
+    background: #f8f5e9;
+    text-align:center;
+    font-size:25px;
+    font-weight: 450;
+    
+}
+.skillsdiv .p2{
+    width:75%;
+    font-size: 20px;
+}
+.skillslist{
+    display:flex;
+    list-style-type:none;
+    gap:10px;
+}
+
+/* projects section.......  */
+#projects{
+    
+    width:97%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.projectscontainer{
+    /* border:2px solid black; */
+    display: flex;
+    padding:15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+
+}
+.projectscontainer .p1{
+    width:50%;
+    text-align:center;
+    background-color: #f8f5e9;
+}
+.projectscontainer .p2{
+    width:50%;
+    
+}
+.projectscontainer .projectimage{
+    width:250px;
+    height:300px;
+    
+}
+.projbtns{
+    color:white;
+    background-color: black;
+}
+
+/* contact section......  */
+#contact{
+    width:97%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    height:auto;
+    background-color: #f8f5e9;
+}
+.contactinfo{
+    display: flex;
+    justify-content: center;
+    gap:25px;
+    background-color: #f8f5e9;
+}
+.contactdivone{
+    background-color: #f44336bc;
+    width:40%;
+    display: flex;
+    align-items: center;
+    gap:15px;
+    padding:10px;
+    border-radius: 15px;
+}
+.contactdivtwo{
+    background-color: #f44336bc;
+    width:40%;
+    display: flex;
+    align-items: center;
+    gap:15px;
+    padding:10px;
+    border-radius: 15px;
+}
+.contactdivthree{
+    background-color: #017784;
+    width:40%;
+    
+    display: flex;
+    align-items: center;
+    gap:15px;
+    padding:10px;
+    border-radius: 15px;
+}
+.contactlogo{
+    height:80px;
+    width:100px;
+}
+.contactinfo .contactlogo,img {
+    height:35px;
+    width:35px;
+}
+
+/* footer section ......  */
+#footer .footercontainer{
+    background-color: rgba(72, 70, 70, 0.566);
+    display:flex;
+    justify-content: center;
+    padding-top: 7px;   
+}
+
+/* this is no need if the mobile view is in desktop mode....... */
+/* mobile version ....  */
+@media only screen and (max-width:750px){
+    #header{
+        width: 100%;
+    }
+    #about{
+        flex-direction: column;
+    }
+    .aboutp2{
+        width:100%;
+        text-align: left;
+        padding:10px;
+        /* border:1px solid black; */
+    }
+    .aboutp1{
+        width:100%;
+        text-align: center;  /* this is to get the image into center position.*/
+        align-self: center;
+    }
+
+    .skillsdiv{
+        flex-direction:column ;
+    }
+    .skillsdiv .p1{
+        width:100%;
+        background: #f8f5e9;
+        text-align:center;
+        font-size:25px;
+        font-weight: 450;
+        
+    }
+    .skillsdiv .p2{
+        width:100%;
+        font-size: 20px;
+    }
+    .skillslist{
+        display:flex;
+        list-style-type:none;
+        gap:10px;
+        flex-wrap: wrap;
+    }
+
+    .projectscontainer{
+        /* border:2px solid black; */
+        display: flex;
+        padding:15px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+        flex-direction: column;
+    }
+    .projectscontainer .p1{
+        width:100%;
+        text-align:center;
+        background-color: #f8f5e9;
+    }
+    .projectscontainer .p2{
+        width:100%;
+        
+    }
+    .projectscontainer .projectimage{
+        width:250px;
+        height:300px;
+        
+    }
+    .projbtns{
+        color:white;
+        background-color: black;
+    }
+
+    .contactinfo{
+        display: flex;
+        justify-content: center;
+        gap:25px;
+        background-color: #f8f5e9;
+        flex-direction: column;
+    }
+    .contactdivone{
+        width:100%;
+    }
+    .contactdivtwo{
+        width:100%;
+    }
+    .contactdivthree{
+        width:100%;
+    }
+}
